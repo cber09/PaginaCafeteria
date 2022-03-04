@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BlogDeCafe</title>
-    <!--Css-->
+    <title>BlogDeCafe</title>   
+    <!-- PREFETECH -->
+    <link rel="PREFETECH" href="nosotros.html" as="document">
+    
+    
+    <!-- PRELOAD -->
+    <link rel="PRELOAD" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="PRELOAD" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
     <!--Letras-->
+    <link rel="PRELOAD" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="PRELOAD" href="img/blog1.jpg" as="image">
 </head>
 <body>
     <header class="header">
@@ -44,7 +53,11 @@
             <!--BlogArticulo-->
             <article class="entrada">
                 <div class="entra__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
+                    
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Tipos de grano de café</h4>
@@ -56,7 +69,11 @@
             <!--BlogArticulo-->
             <article class="entrada">
                 <div class="entra__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
+
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">3 deliciosa recetas de cafe</h4>
@@ -68,7 +85,10 @@
             <!--BlogArticulo-->
             <article class="entrada">
                 <div class="entra__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Beneficios del café</h4>
@@ -80,7 +100,7 @@
         </main>
         <aside class="sidebar">
             <h3>Nuestros Cursos y Talleres</h3>
-            <ul class="cursos no-padding">
+            <ul class="cursos_cu no-padding">
                 <li class="widget-cursos">
                     <h4 class="no-margin">Tecnicas de extraccion de cafe</h4>
                     <p class="widget-curso__label">Precio:
